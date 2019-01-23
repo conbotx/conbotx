@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- by Giacomo Lawrance https://giacomolaw.me -->
+<head>
+	<meta charset="UTF-8">
+	<title>MySpace Profile</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.min.js"></script>
+</head>
+<body>
+	<header class="header">
+		<img src="img/logo.png" class="logoimg" alt="MySpace"/>
+		<div style="float: right;">
+			<input class="googlesearch" type="text" size="35">
+			<button class="googleinput" type="submit">Search</button>
+			<img src="img/poweredbygoogle.png" class="poweredbygoogleimg" alt=""/>
+		</div>
+	</header>
+	<div class="topnav">
+		<a href="index.html">Home</a>
+		<a href="index.html">Mail (80) <span class="downarrow">▼</span></a>
+		<a href="index.html">Profile <span class="downarrow">▼</span></a>
+		<a href="index.html">Friends <span class="downarrow">▼</span></a>
+		<a href="index.html">Music</a>
+		<a href="index.html">Video</a>
+		<a href="index.html">More <span class="downarrow">▼</span></a>
+		<a href="index.html">Connor G <span class="downarrow">▼</span></a>
+		<div class="topnav-right">
+			<a href="index.html" style="border-left-style: solid; border-color: #194697; border-width: 2px;">Lite</a>
+			<a href="index.html">My Account</a>
+			<a href="index.html">Sign Out</a>
+		</div>
+	</div>
+	<div class="content">
+		<br />
+		<div class="introbox">
+			<div class="row">
+				<div class="introcolumn1">
+					<img src="img/connor.jpg" style="width:200px;padding-right:10px;" align="left" alt=""/>
+					<p class="name">Connor G</p>
+					<p>Cheese Enthusiast&nbsp&nbsp&nbsp&nbsp&nbsp<strong>Mood:</strong> Spicy 👅 <span class="statusupdatetime">at 3:55 PM 20 Jan</span> <a href="index.html" style="text-decoration:none;font-size:0.79em;">view more</a></p>
+					<div style="padding-top:10px;">
+						<p><i>View My:</i> <a href="index.html" style="text-decoration:none">Photos&nbsp&nbspVideos</a></p>
+					</div>
+					<!-- personal info box -->
+					<div class="personalinfobox">
+						<p>25 / Male<br />Los Angeles, California, US<br />Last Login 1/20/2019<br />
+							<img src="img/OnlineNow.gif" style="padding-top: 10px;" height="40px;" alt=""/>
+						</p>
+					</div>
+				</div>
+				<div class="introcolumn2">
+					<!-- url -->
+					<img src="img/url.png" style="vertical-align:middle;width:34px;" alt=""/>
+					<span><a href="index.html" style="text-decoration:none;font-size:0.8em;">www.myspace.com/connorg</a></span>
+					<!-- send message -->
+					<div style="padding-top: 7px">
+						<img src="img/mail.gif" style="vertical-align:middle;width:27px;" alt=""/>
+						<span><a href="index.html" style="text-decoration:none;font-size:0.8em;">Send Message</a></span>
+					</div>
+					<!-- add friends -->
+					<div style="padding-top: 7px">
+						<img src="img/friend.gif" style="vertical-align:middle;width:20px;" alt=""/>
+						<span><a href="index.html" style="text-decoration:none;font-size:0.8em;">Add to Friends</a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="contentborder1">
+				<div class="introbox">
+					<p class="boxheader">Details</p>
+					<table style="width:100%;" class="no-spacing" cellspacing="0">
+						<!-- col sizes -->
+						<colgroup>
+							<col span="1" style="width: 40%;">
+							<col span="1" style="width: 60%;">
+						</colgroup>
+						<tbody>
+							<tr>
+								<td class="firstcolumn infoboxes">Status:</td>
+								<td class="infoboxes">Single</td>
+							</tr>
+							<tr>
+								<td class="firstcolumn infoboxes">Here for:</td>
+								<td class="infoboxes">Networking, Friends</td>
+							</tr>
+							<tr>
+								<td class="firstcolumn infoboxes">Orientation:</td>
+								<td class="infoboxes">Straight</td>
+							</tr>
+							<tr>
+								<td class="firstcolumn infoboxes">Body Type:</td>
+								<td class="infoboxes">Average</td>
+							</tr>
+							<tr>
+								<td class="firstcolumn infoboxes">Ethnicity:</td>
+								<td class="infoboxes">White/Caucasian</td>
+							</tr>
+							<tr>
+								<td class="firstcolumn infoboxes">Zodiac Sign:</td>
+								<td class="infoboxes">Taurus</td>
+							</tr>
+							<tr>
+								<td class="firstcolumn infoboxes">Children:</td>
+								<td class="infoboxes">Hopefully none right now</td>
+							</tr>
+							<tr>
+								<td class="firstcolumn infoboxes">Education:</td>
+								<td class="infoboxes">Grad/University</td>
+							</tr>
+							<tr>
+								<td class="firstcolumn infoboxes">Occupation:</td>
+								<td class="infoboxes">Marketing</td>
+							</tr>
+							<tr>
+								<td class="firstcolumn infoboxes">Income:</td>
+								<td class="infoboxes">Poor</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="introbox" align="center" id="audioplayer">
+					<p class="boxheader">Songs</p>
+					<br />
+					<audio id="audio" tabindex="0" controls="">
+						<source src="http://xray840.startdedicated.net/quicksilver/Non%20Stop/Punk-Pop%20Collection/Sum%2041%20-%20Fat%20lip%20-%20%20Fat%20lip.mp3">
+					</audio>
+					<ul style="text-align: left;padding-left:30px;" id="playlist">
+						<li class="song active">
+							<p><a href="http://xray840.startdedicated.net/quicksilver/Non%20Stop/Punk-Pop%20Collection/Sum%2041%20-%20Fat%20lip%20-%20%20Fat%20lip.mp3">Sum 41 - Fat Lip</a></p>
+						</li>
+						<li class="song">
+							<p><a href="http://www.negativesplits.net/files/music/Nelly/Nellyville/10%20-%20Nelly%20-%20Dilemma.mp3">Nelly - Dilemma</a></p>
+						</li>
+						<li class="song">
+							<p><a href="http://matthewlombaerde.com/Personal_Music/Drop%20It%20Like%20It%27s%20Hot%20%28Feat.%20Pharrel.mp3">Drop It Like It's Hot</a></p>
+						</li>
+						<li class="song">
+							<p><a href="http://physics.ucsc.edu/~zack/music/Blink182_-_All_the_Small_Things.mp3">Blink 182</a></p>
+						</li>
+					</ul>
+				</div>
+				<div class="introbox">
+					<p class="boxheader">Interests</p>
+					<table style="width:100%;" class="no-spacing" cellspacing="0">
+						<!-- col sizes -->
+						<colgroup>
+							<col span="1" style="width: 40%;">
+							<col span="1" style="width: 60%;">
+						</colgroup>
+						<tbody>
+							<tr>
+								<td class="firstcolumn infoboxes">General:</td>
+								<td class="infoboxes">I like longs walks on the beach, boxed wine, and japanese cars.</td>
+							</tr>
+							<tr>
+								<td class="firstcolumn infoboxes">Music:</td>
+								<td class="infoboxes">Blink-182, Sum 41, Good Charlotte, whatever.</td>
+							</tr>
+							<tr>
+								<td class="firstcolumn infoboxes">Movies:</td>
+								<td class="infoboxes">Dude, Wheres My Car?, Paul Blart Mall Cop, Shrek 1 & 3</td>
+							</tr>
+							<tr>
+								<td class="firstcolumn infoboxes">Books:</td>
+								<td class="infoboxes">Nah</td>
+							</tr>
+							<tr>
+								<td class="firstcolumn infoboxes">Heroes:</td>
+								<td class="infoboxes">Aston Kutcher, Dwayne "The Rock" Johnson</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="contentborder2">
+				<div class="introbox">
+					<p class="friendspacetitle" style="padding-bottom:5px">Blurb</p>
+					<p class="blurbsubtitles" style="padding-bottom:5px">About me:</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<br />
+					<p class="blurbsubtitles" style="padding-bottom:5px">Who I'd like to meet:</p>
+					<p>You</p>
+				</div>
+				<div class="introbox">
+					<p class="friendspacetitle">Friend Space (Top 8)</p>
+					<p style="font-weight:bold;float:left;">Connor G has <span style="color: red;">153</span> friends.</p>
+					<p style="float:right">View:&nbsp&nbsp&nbsp<a href="index.html" style="text-decoration:none;">All</a> | <a href="index.html" style="text-decoration:none;">Online</a> | <a href="index.html" style="text-decoration:none;">News</a> | <a href="index.html" style="text-decoration:none;">Mutual</a></p>
+					<br />
+					<div class="row">
+						<div class="imagecolumn">
+							<p style="text-align:center;padding-bottom:5px;"><a href="index.html" style="text-decoration:none;">Max</a></p>
+							<img src="img/max.jpg" alt="" style="width:100%;height:6.05em;object-fit: cover;">
+						</div>
+						<div class="imagecolumn">
+							<p style="text-align:center;padding-bottom:5px;"><a href="index.html" style="text-decoration:none">Kasper</a></p>
+							<img src="img/kasper.jpg" alt="" style="width:100%;height:6.05em;object-fit: cover;">
+						</div>
+						<div class="imagecolumn">
+							<p style="text-align:center;padding-bottom:5px;"><a href="index.html" style="text-decoration:none">Dylan</a></p>
+							<img src="img/Dylan.jpg" alt="" style="width:100%;height:6.05em;object-fit: cover;">
+						</div>
+						<div class="imagecolumn">
+							<p style="text-align:center;padding-bottom:5px;"><a href="index.html" style="text-decoration:none">Scott</a></p>
+							<img src="img/Scott.jpg" alt="" style="width:100%;height:6.05em;object-fit: cover;">
+						</div>
+						<div class="imagecolumn">
+							<p style="text-align:center;padding-bottom:5px;"><a href="index.html" style="text-decoration:none">Sam</a></p>
+							<img src="img/sam.jpg" alt="" style="width:100%;height:6.05em;object-fit: cover;">
+						</div>
+						<div class="imagecolumn">
+							<p style="text-align:center;padding-bottom:5px;"><a href="index.html" style="text-decoration:none">Trevor</a></p>
+							<img src="img/Trevor.jpg" alt="" style="width:100%;height:6.05em;object-fit: cover;">
+						</div>
+						<div class="imagecolumn">
+							<p style="text-align:center;padding-bottom:5px;"><a href="index.html" style="text-decoration:none">Ben</a></p>
+							<img src="img/ben.jpg" alt="" style="width:100%;height:6.05em;object-fit: cover;">
+						</div>
+						<div class="imagecolumn">
+							<p style="text-align:center;padding-bottom:5px;"><a href="index.html" style="text-decoration:none">Tom</a></p>
+							<img src="img/Tom.jpg" alt="" style="width:100%;height:6.05em;object-fit: cover;">
+						</div>
+					</div>
+				</div>
+				<div class="introbox">
+					<p class="friendspacetitle">Post Comments</p>
+					<p style="text-align: right;padding-top:7px;padding-bottom:12px;padding-right:16px;"><a href="index.html" style="text-decoration:none;">4 Comments</a></p>
+					<textarea rows="5" cols="84" placeholder=" Write your comment here..."></textarea>
+					<button class="commentsubmit" type="submit">Submit</button>
+					<br />
+					<table style="width:100%;" class="no-spacing" cellspacing="0" border=1 frame=void rules=rows>
+						<!-- col sizes -->
+						<colgroup>
+							<col span="1" style="width: 35%;">
+							<col span="1" style="width: 65%;">
+						</colgroup>
+						<tbody>
+							<tr>
+								<td class="commentpicture">Ken<br /><br /><img src="img/comment3.png" height="200px" alt=""/> </td>
+								<td style="padding-top: 20px;">Sep 9 2019 11:42 AM
+									<br /><br />
+									""""HONK! HONK!<br />
+									"""^^^^^^^^^^^^| |<br />
+									| SEXY TRUCK | '|""";.., __.<br />
+									|_..._...______===|==|__|..., ] |<br />
+									"(@ )'(@ )""""*|(@ )(@ )*****(@<br /><br />
+
+									YOU'VE BEEN HIT! YOU'VE BEEN CONSIDERED ONE OF THE SEXIEST ON MY SPACE! ONCE YOU'VE BEEN HIT U HAVE TO HIT THE SEXIEST PEOPLE. IF U GET HIT AGAIN U KNOW THAT U R REALLY SEXY. IF U BREAK THE CHAIN U HAVE UGLINESS FOR 15 YEARS ..........SO HIT 15 SEXY PEOPLE AND LET THEM KNOW THEY R SEXY<br />
+									SEND THIS TO ALL THE PPL THAT U THINK ARE SEXI<br /><br />
+
+									-IF U GOT 1 BACK THEN U ARE UGLY PPL JUST SENT U THIS TO BE NICE<br />
+									-IF U GOT 2 BACK UR BETTER THAN UGLY<br />
+									-IF U GET 3 BACK UR OKAY<br />
+									-IF U GET 4 BACK THEN U ARE PRETTY<br />
+									-IF U GET 5 BACK THEN U ARE FREAKIN SEXI<br />
+									-AND IF YOU GET MORE THAN THAT EVERYBODY THINKS YOU'RE FUCKIN FINE<br />
+									Send this to all ur sexii friends.<br />
+									Including person who sent it to u
+									<br /><br /><br />
+									<hr />
+								</td>
+							</tr>
+							<tr>
+								<td class="commentpicture">XxXMikeMurderXxX<br /><br /><img src="img/comment2.png" width="150px" alt=""/> </td>
+								<td style="padding-top: 20px;">Sep 9 2019 11:42 AM
+									<br /><br />
+									<img src="img/swimming.gif" alt="" style="padding-left:60px" width="70%"/>
+									<br /><br /><br />
+									<hr />
+								</td>
+							</tr>
+							<tr>
+								<td class="commentpicture">Connor's #1 Grandma<br /><br /><img src="img/comment4.png" width="150px" alt=""/> </td>
+								<td style="padding-top: 20px;">Sep 9 2019 11:42 AM
+									<br /><br />
+									Connor, grandma is finally on the email. Uncle Jeff isn't doing to well, fell down the stairs. I love you!!
+									<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+									<hr />
+								</td>
+							</tr>
+							<tr>
+								<td class="commentpicture">Romina<br /><br /><img src="img/comment1.png" width="150px" alt=""/> </td>
+								<td style="padding-top: 20px;">Sep 9 2019 11:42 AM
+									<br /><br />
+									Hi!<br />
+									Thx for the readd.<br />
+									I'm fine, a little bit tired.<br />
+									And you?<br />
+									xxx
+									<br /><br /><br /><br /><br /><br />
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br />
+	<div class="footer">
+		<p>
+			<a href="index.html">About</a> |
+			<a href="index.html"> FAQ</a> |
+			<a href="index.html"> Terms</a> |
+			<a href="index.html"> Privacy Policy</a> |
+			<a href="index.html"> Saftey Tips</a> |
+			<a href="index.html"> Contact MySpace</a> |
+			<a href="index.html"> Report Abuse</a> |
+			<a href="index.html"> Advertise</a> |
+			<a href="index.html"> MySpace Internationnal</a> |
+			<a href="index.html"> MySpace Latino</a>
+		</p>
+		<br />
+		<p style="padding-bottom:5px;">By <a href="https://giacomolaw.me" target="_blank">Giacomo Lawrance</a></p>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
