@@ -134,7 +134,7 @@ body {
 
 .introbox {
 	border: 1px solid #e3e3e3;
-	background-color: #fffff1;
+	background-color: #ffffff;
 	padding: 5px;
 	margin-left: 15px;
 	margin-bottom: 15px;
@@ -145,9 +145,9 @@ body {
 
 .personalinfobox {
 	background-color: #d6e7fb;
-	width: 857px;
+	width: 845px;
 	margin-top: 6px;
-	margin-left: 197px;
+	margin-left: 213px;
 	padding-top: 10px;
 	padding-left: 8px;
 	text-align: left;
